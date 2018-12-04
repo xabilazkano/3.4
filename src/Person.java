@@ -2,6 +2,7 @@ import java.util.Random;
 
 /**
  * Person class
+ * 
  * @author xabilazkano
  *
  */
@@ -22,10 +23,11 @@ public class Person extends Agenda {
 
 	/**
 	 * Second constructor
-	 * @param name The name of the person
-	 * @param age The age of the person
+	 * 
+	 * @param name   The name of the person
+	 * @param age    The age of the person
 	 * @param weight The weight of the person
-	 * @param dni The dni of the person
+	 * @param dni    The dni of the person
 	 */
 	public Person(String name, int age, double weight, String dni) { // second constructor
 		this.name = name;
@@ -37,38 +39,35 @@ public class Person extends Agenda {
 		}
 		this.dni = dni;
 	}
-	
+
 	/**
 	 * Third constructor
-	 * @param name The name of the person
-	 * @param age The age of the person
+	 * 
+	 * @param name   The name of the person
+	 * @param age    The age of the person
 	 * @param weight The weight of the person
 	 */
 
-	public Person(String name, int age, double weight) { // third constructor
+	public Person(String name) { // third constructor
 		this.name = name;
-		if (age > 0 && age < 120) {
-			this.age = age;
-		}
-		if (weight > 0) {
-			this.weight = weight;
-		}
 
 	}
-	
+
 	/**
 	 * Set a new name
-	 * @param name 
+	 * 
+	 * @param name
 	 */
 
 	public void setName(String name) { // change the name
 		this.name = name;
 	}
-	
-    /**
-     * Set a new age
-     * @param age
-     */
+
+	/**
+	 * Set a new age
+	 * 
+	 * @param age
+	 */
 
 	public void setAge(int age) { // change the age
 		if (age > 0 && age < 120) {
@@ -78,6 +77,7 @@ public class Person extends Agenda {
 
 	/**
 	 * Set a new weight
+	 * 
 	 * @param weight
 	 */
 	public void setWeight(double weight) { // change the weight
@@ -85,9 +85,10 @@ public class Person extends Agenda {
 			this.weight = weight;
 		}
 	}
-	
+
 	/**
 	 * Set a new dni
+	 * 
 	 * @param dni
 	 */
 
@@ -97,6 +98,7 @@ public class Person extends Agenda {
 
 	/**
 	 * Gets the name
+	 * 
 	 * @return Returns the name
 	 */
 	public String getName() {
@@ -105,6 +107,7 @@ public class Person extends Agenda {
 
 	/**
 	 * Gets the age
+	 * 
 	 * @return Returns the age
 	 */
 	public int getAge() {
@@ -113,13 +116,16 @@ public class Person extends Agenda {
 
 	/**
 	 * Gets the weight
+	 * 
 	 * @return Returns the weight
 	 */
 	public double getWeight() {
 		return weight;
 	}
+
 	/**
 	 * Gets the dni
+	 * 
 	 * @return Returns the dni
 	 */
 
@@ -158,6 +164,7 @@ public class Person extends Agenda {
 
 	/**
 	 * Create a new dni
+	 * 
 	 * @return Returns the new dni
 	 */
 	public String dniByDefault() { // we create a random dni
