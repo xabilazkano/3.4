@@ -6,17 +6,7 @@ public class Agenda {
 	private ArrayList<Integer> numbers = new ArrayList<Integer>();
 	private ArrayList<String> addresses = new ArrayList<String>();
 
-	public int index(String name) {
-		int index = 100;
-		for (int i = 0; i < persons.size(); i++) {
-			if (persons.get(i).getName().matches(name)) {
-				index = i;
-				break;
-			}
-		}
 
-		return index;
-	}
 
 	public void setContact(Person person, int number, String address) {
 
@@ -93,6 +83,18 @@ public class Agenda {
 			}
 			System.out.println("Succesfuly edited");
 		}
+	}
+	
+	private int index(String name) {
+		int index = 100;
+		for (int i = 0; i < persons.size(); i++) {
+			if (persons.get(i).getName().matches(name)) {
+				index = i;
+				break;
+			}
+		}
+
+		return index;
 	}
 
 }
